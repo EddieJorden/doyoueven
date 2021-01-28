@@ -1,25 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+import { useState } from 'react';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	const [title, setTitle] = useState('elloo.?.');
+
+	// const [newButton, setNewButton] = useState('');
+
+	return (
+		<div className="App">
+			<h1>{title}</h1>
+			<button onClick={() => setTitle('wud up...')}>hello?</button>
+			{/* <button
+				onClick={}
+			></button> */}
+			{/* <div>{newButton}</div> */}
+		</div>
+	);
 }
 
 export default App;

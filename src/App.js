@@ -5,9 +5,9 @@ import { useState } from 'react';
 
 function App() {
 	const [title, setTitle] = useState(
-		<div style={{ fontColor: 'white' }}>
-			<div style={{ fontColor: 'white' }}>Are you worthy?</div>
-			<list style={{ fontColor: 'white' }}>
+		<div>
+			<div>Are you worthy?</div>
+			<list>
 				<li>do you smoke weed?</li>
 				<li> you don't drive manual</li>
 				<li>have you even tried psilocybin?</li>
@@ -20,7 +20,7 @@ function App() {
 		<button
 			onClick={() =>
 				setTitle(
-					<div sytle={{ fontColor: 'white' }}>
+					<div>
 						<h1>Congratulations, you are worthy.</h1>
 						<h1>you may call Eddie at 650-218-6940</h1>
 						<img
@@ -39,9 +39,9 @@ function App() {
 	// const [newButton, setNewButton] = useState('');
 
 	return (
-		<div className="App" style={{ fontColor: 'white' }}>
-			<div style={{ fontColor: 'white' }}>
-				<div style={{ fontColor: 'white' }}>{title}</div>
+		<div className="App">
+			<div>
+				<div>{title}</div>
 			</div>
 			<div>{worthyButton}</div>
 			{/* <button onClick={() => setTitle('wud up...')}>hello?</button> */}

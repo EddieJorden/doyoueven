@@ -5,14 +5,13 @@ import { useState } from 'react';
 
 function App() {
 	const [title, setTitle] = useState(
-		<div>
+		<div style={{ flexDirection: 'column' }}>
 			<div>Are you worthy?</div>
 			<list>
 				<li>do you smoke weed?</li>
 				<li> you don't drive manual</li>
 				<li>have you even tried psilocybin?</li>
 			</list>
-			<div></div>
 		</div>
 	);
 
@@ -39,8 +38,21 @@ function App() {
 	// const [newButton, setNewButton] = useState('');
 
 	return (
-		<div className="App">
-			<div>
+		<div
+			className="App"
+			style={{ alignItems: 'center', flexDirection: 'column', display: 'flex' }}
+		>
+			<div
+				style={{
+					alignItems: 'center',
+					flexDirection: 'column',
+					display: 'flex',
+					margin: '0 auto',
+					position: 'absolute',
+					webkitAlignItems: 'center',
+					justifyContent: 'center',
+				}}
+			>
 				<div>{title}</div>
 			</div>
 			<div>{worthyButton}</div>

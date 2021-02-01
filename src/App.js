@@ -10,6 +10,7 @@ function App() {
 			style={{
 				fontSize: '30px',
 				background: 'grey',
+				boxShadow: '3px 3px black',
 				borderRadius: '30px',
 				margin: '20px',
 				padding: '10px',
@@ -45,19 +46,34 @@ function App() {
 				color: 'white',
 				borderRadius: '20px',
 				backgroundColor: 'red',
+				boxShadow: '3px 3px black',
 				fontWeight: 'bold',
 				textShadow: '4px 4px black',
 				cursor: 'pointer',
 			}}
 			onClick={() =>
 				setTitle(
-					<div>
+					<div
+						style={{
+							backgroundColor: 'grey',
+							margin: '10px',
+							padding: '10px',
+							borderRadius: '30px',
+							boxShadow: '3px 3px black',
+							textShadow: '2px 2px black',
+						}}
+					>
 						<h1>Congratulations, you are worthy.</h1>
 						<h1>you may call Eddie at 650-218-6940</h1>
 						<img
 							src="coolerthanyou.jpg"
 							alt="Eddie is cooler than you"
-							style={{ width: '100%', height: 'auto' }}
+							style={{
+								width: '100%',
+								height: 'auto',
+								borderRadius: '10%',
+								boxShadow: '4px 4px black',
+							}}
 						></img>
 					</div>
 				)
@@ -76,11 +92,19 @@ function App() {
 			</div>
 			<div
 				style={{
+					textAlign: 'center',
+					color: 'white',
+					fontSize: '25px',
+					marginBottom: '10px',
+				}}
+			>
+				click this button if you think you are worthy.
+			</div>
+			<div
+				style={{
 					display: 'flex',
 					justifyContent: 'center',
 					alignItems: 'center',
-					// flexDirection: 'column',
-					// position: 'relative',
 				}}
 			>
 				{worthyButton}

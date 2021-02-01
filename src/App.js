@@ -6,18 +6,49 @@ import { useState } from 'react';
 
 function App() {
 	const [title, setTitle] = useState(
-		<div>
-			<div>Reasons why you can't even hang out</div>
+		<div
+			style={{
+				fontSize: '30px',
+				background: 'grey',
+				borderRadius: '30px',
+				margin: '20px',
+				padding: '10px',
+				textShadow: '2px 2px black',
+			}}
+		>
+			<div
+				style={{
+					fontSize: '50px',
+					fontWeight: 'bold',
+					marginBottom: '20px',
+					textShadow: '4px 4px black',
+				}}
+			>
+				Reasons why you can't even hang out
+			</div>
 			<list>
 				<li>do you smoke weed?</li>
 				<li> you don't drive manual</li>
 				<li>have you even tried psilocybin?</li>
+				<li>You don't even lift bro</li>
+				<li>you don't even know what linux is</li>
 			</list>
 		</div>
 	);
 
 	const worthyButton = (
 		<button
+			style={{
+				width: '210px',
+				height: '130px',
+				fontSize: '50px',
+				color: 'white',
+				borderRadius: '20px',
+				backgroundColor: 'red',
+				fontWeight: 'bold',
+				textShadow: '4px 4px black',
+				cursor: 'pointer',
+			}}
 			onClick={() =>
 				setTitle(
 					<div>
@@ -26,7 +57,7 @@ function App() {
 						<img
 							src="coolerthanyou.jpg"
 							alt="Eddie is cooler than you"
-							style={{ width: 500 }}
+							style={{ width: '100%', height: 'auto' }}
 						></img>
 					</div>
 				)
@@ -41,7 +72,7 @@ function App() {
 	return (
 		<div className="App">
 			<div>
-				<div style={{ textAlign: 'center' }}>{title}</div>
+				<div style={{ textAlign: 'center', color: 'white' }}>{title}</div>
 			</div>
 			<div
 				style={{

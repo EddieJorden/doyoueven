@@ -1,12 +1,13 @@
 import './App.css';
 import { useState } from 'react';
+// import { worthyButton } from './components/worthyButton.js';
 // import { reasons } from './components/reasons.js';
 // import sacredgpurp from './components/images/sacredgpurp.jpeg';
 
 function App() {
 	const [title, setTitle] = useState(
-		<div style={{ flexDirection: 'column' }}>
-			<div>Are you worthy?</div>
+		<div>
+			<div>Reasons why you can't even hang out</div>
 			<list>
 				<li>do you smoke weed?</li>
 				<li> you don't drive manual</li>
@@ -38,28 +39,25 @@ function App() {
 	// const [newButton, setNewButton] = useState('');
 
 	return (
-		<div
-			className="App"
-			style={{ alignItems: 'center', flexDirection: 'column', display: 'flex' }}
-		>
+		<div className="App">
+			<div>
+				<div style={{ textAlign: 'center' }}>{title}</div>
+			</div>
 			<div
 				style={{
-					alignItems: 'center',
-					flexDirection: 'column',
 					display: 'flex',
-					margin: '0 auto',
-					position: 'absolute',
-					webkitAlignItems: 'center',
 					justifyContent: 'center',
+					alignItems: 'center',
+					// flexDirection: 'column',
+					// position: 'relative',
 				}}
 			>
-				<div>{title}</div>
+				{worthyButton}
 			</div>
-			<div>{worthyButton}</div>
 			{/* <button onClick={() => setTitle('wud up...')}>hello?</button> */}
 			{/* <button
 				onClick={}
-			></button> */}
+			></button>
 			{/* <div>{newButton}</div> */}
 		</div>
 	);

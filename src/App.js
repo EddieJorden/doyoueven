@@ -1,8 +1,5 @@
 import './App.css';
 import { useState } from 'react';
-// import { worthyButton } from './components/worthyButton.js';
-// import { reasons } from './components/reasons.js';
-// import sacredgpurp from './components/images/sacredgpurp.jpeg';
 
 function App() {
 	const [title, setTitle] = useState(
@@ -37,6 +34,34 @@ function App() {
 		</div>
 	);
 
+	const buttonClick = () => {
+		setTitle(
+			<div
+				style={{
+					backgroundColor: 'grey',
+					margin: '10px',
+					padding: '10px',
+					borderRadius: '30px',
+					boxShadow: '3px 3px black',
+					textShadow: '2px 2px black',
+				}}
+			>
+				<h1>Congratulations, you are worthy.</h1>
+				<h1>you may call Eddie at 650-218-6940</h1>
+				<img
+					src="coolerthanyou.jpg"
+					alt="Eddie is cooler than you"
+					style={{
+						width: '100%',
+						height: 'auto',
+						borderRadius: '10%',
+						boxShadow: '4px 4px black',
+					}}
+				></img>
+			</div>
+		);
+	};
+
 	const worthyButton = (
 		<button
 			style={{
@@ -50,40 +75,19 @@ function App() {
 				fontWeight: 'bold',
 				textShadow: '4px 4px black',
 				cursor: 'pointer',
+				display: 'block',
 			}}
-			onClick={() =>
-				setTitle(
-					<div
-						style={{
-							backgroundColor: 'grey',
-							margin: '10px',
-							padding: '10px',
-							borderRadius: '30px',
-							boxShadow: '3px 3px black',
-							textShadow: '2px 2px black',
-						}}
-					>
-						<h1>Congratulations, you are worthy.</h1>
-						<h1>you may call Eddie at 650-218-6940</h1>
-						<img
-							src="coolerthanyou.jpg"
-							alt="Eddie is cooler than you"
-							style={{
-								width: '100%',
-								height: 'auto',
-								borderRadius: '10%',
-								boxShadow: '4px 4px black',
-							}}
-						></img>
-					</div>
-				)
-			}
+			onClick={() => {
+				buttonClick();
+			}}
 		>
 			I am worthy
 		</button>
 	);
 
-	// const [newButton, setNewButton] = useState('');
+	// function hideButton() {
+	// 	worthyButton.style.display = 'none';
+	// }
 
 	return (
 		<div className="App">
@@ -109,11 +113,6 @@ function App() {
 			>
 				{worthyButton}
 			</div>
-			{/* <button onClick={() => setTitle('wud up...')}>hello?</button> */}
-			{/* <button
-				onClick={}
-			></button>
-			{/* <div>{newButton}</div> */}
 		</div>
 	);
 }

@@ -1,5 +1,6 @@
 import './App.css';
 import { useState } from 'react';
+import cloneDeep from 'lodash/cloneDeep';
 
 function App() {
 	const [title, setTitle] = useState(
@@ -62,7 +63,7 @@ function App() {
 		);
 	};
 
-	const worthyButton = (
+	const [worthyButton, setWorthyButton] = useState(
 		<button
 			style={{
 				width: '210px',
@@ -79,21 +80,30 @@ function App() {
 			}}
 			onClick={() => {
 				buttonClick();
+				removeButton();
 			}}
 		>
 			I am worthy
 		</button>
 	);
 
+	const removeButton = () => {
+		const copy = cloneDeep(worthyButton);
+		copy.props.style.display = 'none';
+		setWorthyButton(copy);
+	};
+
 	// function hideButton() {
 	// 	worthyButton.style.display = 'none';
 	// }
+
+	console.log(worthyButton);
 
 	return (
 		<div className="App">
 			<div>
 				<div style={{ textAlign: 'center', color: 'white' }}>{title}</div>
-			</div>
+			</div>{' '}
 			<div
 				style={{
 					textAlign: 'center',

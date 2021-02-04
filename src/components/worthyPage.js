@@ -1,5 +1,3 @@
-// import ConfirmWorthy from './worthyButton.js';
-
 export const worthyPage = (
 	<div
 		style={{

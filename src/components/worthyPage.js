@@ -1,3 +1,5 @@
+// import ConfirmWorthy from './worthyButton.js';
+
 export const worthyPage = (
 	<div
 		style={{
@@ -7,6 +9,7 @@ export const worthyPage = (
 			borderRadius: '30px',
 			boxShadow: '3px 3px black',
 			textShadow: '2px 2px black',
+			color: 'white',
 		}}
 	>
 		<h1>Congratulations, you are worthy.</h1>

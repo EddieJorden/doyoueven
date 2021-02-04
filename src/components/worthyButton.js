@@ -1,32 +1,29 @@
-import { worthyPage } from './worthyPage.js';
-// import { useState } from 'react';
+// import { worthyPage } from './worthyPage.js';
+import { useState } from 'react';
 
-export const worthyButton = (
-	<button
-		style={{
-			width: '210px',
-			height: '130px',
-			fontSize: '50px',
-			color: 'white',
-			borderRadius: '20px',
-			backgroundColor: 'red',
-			boxShadow: '3px 3px black',
-			fontWeight: 'bold',
-			textShadow: '4px 4px black',
-			cursor: 'pointer',
-			display: 'block',
-		}}
-		onClick={() => {
-			worthyPage();
-			// removeButton();
-		}}
-	>
-		I am worthy
-	</button>
-);
+export function WorthyButton() {
+	let [isClicked, setIsClicked] = useState(false);
 
-// const removeButton = () => {
-// 	const copy = cloneDeep(worthyButton);
-// 	copy.props.style.display = 'none';
-// 	setWorthyButton(copy);
-// };
+	return (
+		<div>
+			<button
+				style={{
+					width: '210px',
+					height: '130px',
+					fontSize: '50px',
+					color: 'white',
+					borderRadius: '20px',
+					backgroundColor: 'red',
+					boxShadow: '3px 3px black',
+					fontWeight: 'bold',
+					textShadow: '4px 4px black',
+					cursor: 'pointer',
+					display: 'block',
+				}}
+				onClick={() => setIsClicked((isClicked = true))}
+			>
+				I am worthy
+			</button>
+		</div>
+	);
+}

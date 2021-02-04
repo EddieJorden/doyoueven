@@ -1,6 +1,6 @@
-// import { worthyButton } from './components/worthyButton.js';
+// import { ConfirmWorthy } from './components/worthyButton.js';
 
-import { worthyButton } from './worthyButton';
+import { WorthyButton } from './worthyButton';
 
 export const welcomePage = (
 	<div>
@@ -36,16 +36,16 @@ export const welcomePage = (
 			<div>
 				<div style={{ textAlign: 'center', color: 'white' }}></div>
 			</div>
-			<div
-				style={{
-					textAlign: 'center',
-					color: 'white',
-					fontSize: '25px',
-					marginBottom: '10px',
-				}}
-			>
-				click this button if you think you are worthy.
-			</div>
+		</div>
+		<div
+			style={{
+				textAlign: 'center',
+				color: 'white',
+				fontSize: '25px',
+				marginBottom: '10px',
+			}}
+		>
+			click this button if you think you are worthy.
 		</div>
 		<div
 			style={{
@@ -54,7 +54,7 @@ export const welcomePage = (
 				alignItems: 'center',
 			}}
 		>
-			<div>{worthyButton}</div>
+			<div>{WorthyButton}</div>
 		</div>
 	</div>
 );

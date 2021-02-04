@@ -1,6 +1,4 @@
-// import { ConfirmWorthy } from './components/worthyButton.js';
-
-import { WorthyButton } from './worthyButton';
+import { redButton } from './redButton';
 
 export const welcomePage = (
 	<div>
@@ -54,7 +52,7 @@ export const welcomePage = (
 				alignItems: 'center',
 			}}
 		>
-			<div>{WorthyButton}</div>
+			<div>{redButton}</div>
 		</div>
 	</div>
 );

@@ -22,16 +22,17 @@ export const WelcomePage = ({ setWorthy }) => {
 						fontWeight: 'bold',
 						marginBottom: '20px',
 						textShadow: '4px 4px black',
+						textAlign: 'center',
 					}}
 				>
-					Reasons why you can't even hang out
+					Learn to hangout
 				</div>
 				<ul>
-					<li>do you smoke weed?</li>
-					<li> you don't drive manual</li>
+					<li>you don't smoke weed</li>
+					<li>you don't drive manual</li>
 					<li>have you even tried psilocybin?</li>
 					<li>You don't even lift bro</li>
-					<li>you don't even know what linux is</li>
+					<li>you don't even know about linux</li>
 				</ul>
 				<div>
 					<div style={{ textAlign: 'center', color: 'white' }}></div>

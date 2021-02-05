@@ -1,4 +1,7 @@
-export const worthyPage = (
+import React from 'react';
+import { RedButton } from './redButton.js';
+
+export const WorthyPage = ({ setWorthy }) => (
 	<div
 		style={{
 			backgroundColor: 'grey',
@@ -22,5 +25,18 @@ export const worthyPage = (
 				boxShadow: '4px 4px black',
 			}}
 		></img>
+		<div
+			style={{
+				display: 'flex',
+				justifyContent: 'center',
+				alignItems: 'center',
+			}}
+		>
+			<RedButton
+				setWorthy={setWorthy}
+				buttonText="I made a mistake"
+				setWorthyToTrueOrFalse={false}
+			/>
+		</div>
 	</div>
 );

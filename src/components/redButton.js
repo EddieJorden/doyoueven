@@ -1,4 +1,10 @@
-export const redButton = (
+import React from 'react';
+
+export const RedButton = ({
+	setWorthy,
+	buttonText,
+	setWorthyToTrueOrFalse,
+}) => (
 	<div>
 		<button
 			style={{
@@ -14,8 +20,9 @@ export const redButton = (
 				cursor: 'pointer',
 				display: 'block',
 			}}
+			onClick={() => setWorthy(setWorthyToTrueOrFalse)}
 		>
-			I am worthy
+			{buttonText}
 		</button>
 	</div>
 );

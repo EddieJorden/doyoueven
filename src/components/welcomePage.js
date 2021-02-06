@@ -28,9 +28,9 @@ export const WelcomePage = ({ setWorthy }) => {
 					Learn to hangout
 				</div>
 				<ul>
-					<li>you don't smoke weed</li>
+					<li>you don't know how to relax...</li>
 					<li>you don't drive manual</li>
-					<li>have you even tried psilocybin?</li>
+					<li>have you even read a book?</li>
 					<li>You don't even lift bro</li>
 					<li>you don't even know about linux</li>
 				</ul>

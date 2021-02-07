@@ -27,6 +27,7 @@ export const WelcomePage = ({ setWorthy }) => {
 				>
 					Learn to hangout
 				</div>
+
 				<ul>
 					<li>you don't know how to relax...</li>
 					<li>you don't drive manual</li>

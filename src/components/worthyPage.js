@@ -18,8 +18,8 @@ export const WorthyPage = ({ setWorthy }) => (
 			<h1>Congratulations!</h1>
 			<h1>if you believe you are worthy</h1>
 			<h1>you may call Eddie at 650-218-6940</h1>
-			{/* <img
-				src="coolerthanyou"
+			<img
+				src={process.env.PUBLIC_URL + '/coolerthanyou.jpg'}
 				alt="Eddie is cooler than you"
 				style={{
 					width: '100%',
@@ -27,7 +27,7 @@ export const WorthyPage = ({ setWorthy }) => (
 					borderRadius: '10%',
 					boxShadow: '4px 4px black',
 				}}
-			></img> */}
+			></img>
 		</div>
 		<div
 			style={{
